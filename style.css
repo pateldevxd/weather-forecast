@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    height: min-content;
+    border-radius: 12px;
+    padding: 30px;
+
+}
+
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: min-content;
+    align-items: center;
+
+}
+
+.search-box input{
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(160, 239, 239);
+    border-radius: 30px;
+    padding: 12px 16px;
+}
+.search-box button{
+    width: 54px;
+    height: 40px;
+    background-color: rgb(160, 239, 239);
+    border-radius: 30px;
+    font-size: 20px;
+}
+.search-box input::placeholder{
+    color: black;
+}
+
+.weather-body img{
+    width: 50%;
+
+}
+
+.weather-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+
+}
+
+.weather-box .temp{
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+}
+
+.weather-box .temp sup{
+    font-size: 25px;
+    position: absolute;
+}
+.weather-box .discrp{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.humidity, .wind{
+    display: flex;
+    
+}
+
+.weather-details i{
+    font-size: 50px;
+}
+
+.weather-details .text{
+    font-size: 20px;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+.weather-details #humidity,#wind{
+    font-weight: bold;
+    
+
+}
+
+.loc-nf{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loc-nf h1{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.loc-nf img{
+    margin-top: 30px;
+    width: 220px;
+}
